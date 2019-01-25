@@ -1,13 +1,10 @@
 class Problem
-  def initialize
-    
-  end
-
+  
   def problem1(number)
     sum =0
     1.upto(number-1) do |i|
       if i%3 == 0 || i%5 ==0
-        sum=sum+i
+        sum = sum + i
       end
     end  
     sum
@@ -17,7 +14,7 @@ class Problem
     counter=0
     num1 = 2
     num2 = 1
-    until counter >= number
+    until counter >= number do
       if num1.even? 
         counter = counter + num1
       end
@@ -27,6 +24,5 @@ class Problem
     end
     counter
   end
-
 
 end
